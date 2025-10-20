@@ -3,6 +3,10 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
+
+spell = st.secrets['spell']
+key = st.secrets.some_magic_api.key
+
 st.markdown("""# This is a header
 ## This is a sub header
 This is text""")
