@@ -33,18 +33,3 @@ if st.checkbox('Show content'):
 title = st.text_input('Movie title', 'Life of Brian')
 
 st.write('The current movie title is', title)
-
-def get_data():
-    return pd.DataFrame(
-            np.random.randn(3, 3),
-            columns=['a', 'b', 'c'])
-
-@st.cache_data
-def get_cached_data():
-    return get_data()
-
-st.write("Uncached dataframe")
-st.write(get_data())
-
-st.write("Cached dataframe")
-st.write(get_cached_data())
